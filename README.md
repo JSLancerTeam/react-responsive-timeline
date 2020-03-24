@@ -1,10 +1,10 @@
-# react-simple-timeline
+# react-responsive-timeline
 <!-- [![dependency status][deps-svg]][deps-url]
 [![dev dependency status][dev-deps-svg]][dev-deps-url] -->
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 
-Simple timeline implemented in ReactJS
+Simple responsive timeline implemented in ReactJS
 
 ### Demo
 - To run demo on your computer:
@@ -26,7 +26,7 @@ pivot: vertical; direction: center
 
 ##### Simple timeline
 ```
-import { Timeline } from 'react-simple-timeline';
+import { Timeline } from 'react-responsive-timeline';
 
 <Timeline
   pivot="vertical"
@@ -66,4 +66,4 @@ direction | string | left | Describe left, center, right |
 ### License
 MIT
 
-[package-url]: https://npmjs.org/package/react-simple-timeline
+[package-url]: https://npmjs.org/package/react-responsive-timeline

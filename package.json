@@ -1,10 +1,10 @@
 {
-  "name": "react-simple-timeline",
+  "name": "react-responsive-timeline",
   "version": "0.1.0",
-  "description": "An ReactJS implementation for timeline by JSLancer team",
+  "description": "An ReactJS implementation for responsive timeline by JSLancer team",
   "author": "Tony Nguyen",
   "license": "MIT",
-  "homepage": "https://github.com/JSLancerTeam/react-simple-timeline",
+  "homepage": "https://github.com/JSLancerTeam/react-responsive-timeline",
   "main": "dist/index.js",
   "module": "dist/index.es.js",
   "jsnext:main": "dist/index.es.js",
