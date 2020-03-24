@@ -9,7 +9,7 @@ const data = [
   {
     id: 1,
     title: 'C.A. Alexander, A Pattern Language, New York,, 1977.',
-    sub: '',
+    sub: '10 May 2020',
   },
   {
     id: 2,
@@ -33,6 +33,6 @@ const data = [
   },
 ];
 
-<Timeline timelines={data} pivot="vertical" direction="right" />
+<Timeline timelines={data} pivot="vertical" direction="center" />
 
 ```

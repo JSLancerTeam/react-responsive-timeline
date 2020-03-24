@@ -1,8 +1,8 @@
 {
   "name": "react-simple-timeline",
-  "version": "0.1",
+  "version": "0.1.0",
   "description": "An ReactJS implementation for timeline by JSLancer team",
-  "author": "Truong Nguyen",
+  "author": "Tony Nguyen",
   "license": "MIT",
   "homepage": "https://github.com/JSLancerTeam/react-simple-timeline",
   "main": "dist/index.js",
