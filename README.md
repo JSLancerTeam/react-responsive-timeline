@@ -61,7 +61,7 @@ pivot | string | vertical | Describe vertical, horizontal |
 direction | string | left | Describe left, center, right |
 
 ### Author
-- Tony Nguyen - tony.nguyen@jslancer.com
+- Tony Nguyen - nhattruong1811@gmail.com
 
 ### License
 MIT
