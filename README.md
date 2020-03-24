@@ -7,7 +7,13 @@
 Simple responsive timeline implemented in ReactJS
 
 ### Demo
-- To run demo on your computer:
+
+Live demo:
+- codesanbox:  https://codesandbox.io/s/react-responsive-timeline-q8vsn
+- stackblitz: https://stackblitz.com/edit/react-responsive-timeline
+
+
+To run demo on your computer:
   - Clone this repository
   - `npm install`
   - `npm run dev`
