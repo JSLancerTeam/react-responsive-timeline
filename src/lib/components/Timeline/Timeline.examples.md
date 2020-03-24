@@ -33,6 +33,6 @@ const data = [
   },
 ];
 
-<Timeline timelines={data} pivot="vertical" direction="center" />
+<Timeline timelines={data} pivot="vertical" direction="left" />
 
 ```

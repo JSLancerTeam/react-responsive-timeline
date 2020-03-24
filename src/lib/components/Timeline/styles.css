@@ -1,10 +1,10 @@
-.timeline {
+.react-timeline {
   margin: 0 auto;
   width: 100%;
   position: relative;
  }
 
-.timeline:before {
+.react-timeline:before {
   content: '';
   position: absolute;
   top: 0;
@@ -13,16 +13,16 @@
   background: #969595;
 }
 
-.timeline__event {
+.react-timeline__event {
   display: flex;
   align-items: center;
 }
 
-.timeline__event + .timeline__event{
+.react-timeline__event + .react-timeline__event{
   margin-top: 50px;
 }
 
-.timeline__icons {
+.react-timeline__icons {
   position: absolute;
   width: 40px;
   height: 40px;
@@ -31,7 +31,7 @@
   background-color: #fff;
 }
 
-.timeline__icons:before {
+.react-timeline__icons:before {
   content: '';
   display: block;
   width: 10px;
@@ -44,86 +44,85 @@
   transform: translate(-50%, -50%);
 }
 
-
-.timeline__lead {
+.react-timeline__lead {
   color: #9a9696;
   font-size: 14px;
   margin-top: 5px;
 }
 
 /** direction left */
-.timeline--left:before {
+.react-timeline--left:before {
   left: 20px;
 }
 
-.timeline--left .timeline_content {
+.react-timeline--left .react-timeline_content {
   margin-left: 60px;
 }
 
 /** direction right */
-.timeline--right .timeline__event  {
+.react-timeline--right .react-timeline__event  {
   flex-direction: row-reverse;
   display: flex;
 }
 
-.timeline--right:before {
+.react-timeline--right:before {
   right: 20px;
 }
 
-.timeline--right .timeline_content {
+.react-timeline--right .react-timeline_content {
   text-align: right;
   margin-right: 60px
 }
 
 /** direction center */
-.timeline--center:before {
+.react-timeline--center:before {
   left: 50%;
   margin-left: -1px;
 }
 
-.timeline--center .timeline_content {
+.react-timeline--center .react-timeline_content {
   width: 50%;
 }
 
-.timeline--center .timeline__event  {
+.react-timeline--center .react-timeline__event  {
   display: flex;
   justify-content: center;
 }
 
-.timeline--center .timeline__event:nth-child(odd):before {
+.react-timeline--center .react-timeline__event:nth-child(odd):before {
   content: '';
   width: 50%;
   height: 1px;
 }
 
-.timeline--center .timeline__event:nth-child(odd) .timeline_content  {
+.react-timeline--center .react-timeline__event:nth-child(odd) .react-timeline_content  {
   margin-left: 60px;
   text-align: left;
 } 
 
-.timeline--center .timeline__event:nth-child(even):after {
+.react-timeline--center .react-timeline__event:nth-child(even):after {
   content: '';
   width: 50%;
   height: 1px;
 }
 
-.timeline--center .timeline__event:nth-child(even) .timeline_content  {
+.react-timeline--center .react-timeline__event:nth-child(even) .react-timeline_content  {
   margin-right: 60px;
   text-align: right;
 } 
 
-/** horizontal - left */
-.timeline--horizontal {
+/** horizontal */
+.react-timeline--horizontal {
   display: flex;
   flex-direction: row;
 }
 
-.timeline--horizontal .timeline__event + .timeline__event {
+.react-timeline--horizontal .react-timeline__event + .react-timeline__event {
   margin-top: 0;
   margin-left: 15px;
 }
 
-.timeline--horizontal:before {
+.react-timeline--horizontal:before {
   width: 100%;
   height: 1px;
   left: 0;
@@ -131,45 +130,47 @@
   margin-top: -1px;
 }
 
-.timeline--horizontal .timeline__event {
+.react-timeline--horizontal .react-timeline__event {
   display: flex;
   justify-content: center;
   flex-direction: column;
   align-items: center;
 }
 
-.timeline--horizontal .timeline__event:nth-child(odd):before {
+.react-timeline--horizontal .react-timeline__event:nth-child(odd):before {
   content: '';
   width: 1px;
   height: 135px;
 }
 
-.timeline--horizontal .timeline__event:nth-child(even):before {
+.react-timeline--horizontal .react-timeline__event:nth-child(even):before {
   content: '';
   width: 1px;
   height: 135px;
 }
 
-.timeline--horizontal .timeline_content {
+.react-timeline--horizontal .react-timeline_content {
   margin: 0;
   width: 100%;
 }
 
-.timeline--horizontal.timeline--left .timeline__event .timeline_content  {
+/** horizontal - left */
+.react-timeline--horizontal.react-timeline--left .react-timeline__event .react-timeline_content  {
   margin: 0;
   text-align: left;
 } 
 
-.timeline--horizontal.timeline--center .timeline__event .timeline_content  {
+/** horizontal - center */
+.react-timeline--horizontal.react-timeline--center .react-timeline__event .react-timeline_content  {
   margin: 0;
   text-align: left;
 } 
 
-.timeline--horizontal.timeline--center .timeline__event:nth-child(even):before {
+.react-timeline--horizontal.react-timeline--center .react-timeline__event:nth-child(even):before {
   display: none;
 }
 
-.timeline--horizontal.timeline--center .timeline__event:nth-child(even):after {
+.react-timeline--horizontal.react-timeline--center .react-timeline__event:nth-child(even):after {
   content: '';
   width: 1px;
   height: 135px;
