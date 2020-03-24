@@ -16,11 +16,11 @@ Simple responsive timeline implemented in ReactJS
 
 pivot: vertical; direction: left
 
-![alt text](images/screen-shot.png)
+![alt text](https://raw.githubusercontent.com/JSLancerTeam/react-responsive-timeline/master/images/screen-shot.png)
 
 pivot: vertical; direction: center
 
-![alt text](images/vertical-center.png)
+![alt text](https://raw.githubusercontent.com/JSLancerTeam/react-responsive-timeline/master/images/vertical-center.png)
 
 ### Usage
 
