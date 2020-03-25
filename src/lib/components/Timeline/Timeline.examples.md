@@ -1,9 +1,8 @@
 Timeline examples:
 
 ###### Simple Timeline
-
 ```js
-import { Timeline } from 'react-rollup-boilerplate';
+import { Timeline } from 'react-responsive-timeline';
 
 const data = [
   {
@@ -28,11 +27,12 @@ const data = [
   },
   {
     id: 5,
-    title: ' F.P. Brooks, The Mythical Man-Month: Essays,',
+    title: 'F.P. Brooks, The Mythical Man-Month: Essays, F.P. Brooks, The Myt',
     sub: '11 December 2020',
   },
 ];
 
-<Timeline timelines={data} pivot="vertical" direction="left" />
+<Timeline timelines={data} pivot="vertical" direction="center" tooltip={true} textLimit="none"  />
 
 ```
+  

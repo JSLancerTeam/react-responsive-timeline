@@ -2,6 +2,7 @@
   margin: 0 auto;
   width: 100%;
   position: relative;
+  font-size: 16px;
  }
 
 .react-timeline:before {
@@ -115,6 +116,7 @@
 .react-timeline--horizontal {
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
 }
 
 .react-timeline--horizontal .react-timeline__event + .react-timeline__event {
@@ -174,4 +176,208 @@
   content: '';
   width: 1px;
   height: 135px;
+}
+
+/** text limit */
+.react-timeline__content--limit .react-timeline__title {
+  position: relative;
+}
+
+.react-timeline__content--limit .react-timeline__title span {
+  display: block;
+  word-wrap: break-word;
+  overflow: hidden;
+  max-height: 20px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+/** text limit vertical center */
+.react-timeline--vertical.react-timeline--center .react-timeline__content--limit {
+  width: 45% !important;
+}
+
+/** tooltip */
+.react-timeline__tooltip { 
+  display: none;
+  width: 200px;
+  padding: 3px 8px;
+  color: #fff;
+  text-align: center;
+  background-color: #000;
+  border-radius: 4px;
+  position: absolute;
+  font-size: 14px;
+}
+
+.react-timeline__event--tooltip:hover .react-timeline__tooltip{
+  display: block;
+}
+
+.react-timeline__tooltip .react-timeline__arrow {
+  position: absolute;
+}
+
+.react-timeline__tooltip .react-timeline__arrow:before {
+  content: "";
+  position: absolute;
+  border-color: transparent;
+  border-style: solid;
+}
+
+/** tooltip left */
+.react-timeline--vertical.react-timeline--left .react-timeline__tooltip {
+  left: -230px;
+  top: 50%;
+  transform: translate(0, -50%);
+}
+
+.react-timeline--vertical.react-timeline--left .react-timeline__arrow {
+  right: 0;
+  height: 12px;
+  top: 50%;
+  transform: translate(0, -65%);
+}
+
+.react-timeline--vertical.react-timeline--left .react-timeline__arrow:before {
+  left: 0;
+  border-width: .4rem 0 .4rem .4rem;
+  border-left-color: #000;
+}
+
+/** tooltip right */
+.react-timeline--right .react-timeline__tooltip {
+  right: -230px;
+  top: 50%;
+  transform: translate(0, -50%);
+}
+
+.react-timeline--vertical.react-timeline--right .react-timeline__arrow {
+  left: 0;
+  height: 12px;
+  top: 50%;
+  transform: translate(0, -65%);
+}
+
+.react-timeline--vertical.react-timeline--right .react-timeline__arrow:before {
+  right: 0;
+  border-width: .4rem .4rem .4rem 0;
+  border-right-color: #000;
+}
+
+/** tooltip center odd */
+.react-timeline--vertical.react-timeline--center .react-timeline__event:nth-child(odd) .react-timeline__tooltip {
+  left: -230px;
+  top: 50%;
+  transform: translate(0, -50%);
+}
+
+.react-timeline--vertical.react-timeline--center .react-timeline__event:nth-child(odd) .react-timeline__arrow {
+  right: 0;
+  height: 12px;
+  top: 50%;
+  transform: translate(0, -65%);
+}
+
+.react-timeline--vertical.react-timeline--center .react-timeline__event:nth-child(odd) .react-timeline__arrow:before {
+  left: 0;
+  border-width: .4rem 0 .4rem .4rem;
+  border-left-color: #000;
+}
+
+/** tooltip center even */
+.react-timeline--vertical.react-timeline--center .react-timeline__event:nth-child(even) .react-timeline__tooltip {
+  right: -230px;
+  top: 50%;
+  transform: translate(0, -50%);
+}
+
+.react-timeline--vertical.react-timeline--center .react-timeline__event:nth-child(even) .react-timeline__arrow {
+  left: 0;
+  height: 12px;
+  top: 50%;
+  transform: translate(0, -65%);
+}
+
+.react-timeline--vertical.react-timeline--center .react-timeline__event:nth-child(even) .react-timeline__arrow:before {
+  right: 0;
+  border-width: .4rem .4rem .4rem 0;
+  border-right-color: #000;
+}
+
+/** horizontal tooltip */
+.react-timeline--horizontal .react-timeline__tooltip {
+  width: 140px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.react-timeline--horizontal .react-timeline__arrow {
+  bottom: -17px;
+  height: 12px;
+  left: 46%;
+  transform: translate(-50%, -50%);
+}
+
+.react-timeline--horizontal .react-timeline__arrow:before {
+  top: 0;
+  border-width: .4rem .4rem 0;
+  border-top-color: #000;
+}
+
+/** horizontal left tooltip  */
+.react-timeline--horizontal.react-timeline--left .react-timeline__tooltip {
+  top: -120%;
+}
+
+/** horizontal right tooltip  */
+.react-timeline--horizontal.react-timeline--right .react-timeline__tooltip {
+  top: -120%;
+}
+
+/** horizontal center tooltip  */
+
+.react-timeline--horizontal .react-timeline__tooltip span::-webkit-scrollbar
+{
+	width: 3px;
+	background-color: #000000;
+}
+
+.react-timeline--horizontal .react-timeline__tooltip span::-webkit-scrollbar-thumb
+{
+	background-color: #000000;
+}
+
+.react-timeline--horizontal.react-timeline--center .react-timeline__tooltip {
+  padding: 3px 2px;
+}
+
+.react-timeline--horizontal .react-timeline__tooltip span{
+  display: block;
+  height: 65px;
+  overflow-y: scroll;
+}
+
+.react-timeline--horizontal.react-timeline--center .react-timeline__event:nth-child(odd) .react-timeline__tooltip {
+  top: -120%;
+  transform: translate(-50%, -50%);
+}
+
+
+.react-timeline--horizontal.react-timeline--center .react-timeline__event:nth-child(even) .react-timeline__tooltip {
+  bottom: -120%;
+  transform: translate(-50%, 50%);
+}
+
+.react-timeline--horizontal.react-timeline--center .react-timeline__event:nth-child(even) .react-timeline__arrow {
+  top: -6px;
+  height: 12px;
+  left: 46%;
+  transform: translate(-50%, -50%);
+}
+
+.react-timeline--horizontal.react-timeline--center .react-timeline__event:nth-child(even) .react-timeline__arrow:before {
+  bottom: 0;
+  border-width: 0 .4rem .4rem;
+  border-bottom-color: #000;
 }

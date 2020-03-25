@@ -15,20 +15,29 @@ Live demo:
 
 To run demo on your computer:
   - Clone this repository
-  - `npm install`
-  - `npm run dev`
+  - `yarn install`
+  - `yarn run dev`
 
 ### Screenshot
 
-pivot: vertical; direction: left
+pivot: vertical
+
+direction: left
 
 ![alt text](https://raw.githubusercontent.com/JSLancerTeam/react-responsive-timeline/master/images/screen-shot.png)
 
-pivot: vertical; direction: center
+pivot: vertical
 
-![alt text](https://raw.githubusercontent.com/JSLancerTeam/react-responsive-timeline/master/images/vertical-center.png)
+direction: center
+
+tooltip: true
+
+![alt text](https://raw.githubusercontent.com/JSLancerTeam/react-responsive-timeline/master/images/tooltip.png)
 
 ### Usage
+
+
+### You can combine pivot and direction together
 
 ##### Simple timeline
 ```
@@ -37,6 +46,8 @@ import { Timeline } from 'react-responsive-timeline';
 <Timeline
   pivot="vertical"
   direction="left"
+  tooltip={true}
+  textLimit="none"
   timelines={[
     {
       id: 1,
@@ -56,8 +67,6 @@ import { Timeline } from 'react-responsive-timeline';
   ]} />
 ```
 
-You can combine pivot and direction together
-
 
 ##### Props
 |Prop name |Prop type|Default value|Description|
@@ -65,6 +74,8 @@ You can combine pivot and direction together
 timelines | array | Required | data |
 pivot | string | vertical | Describe vertical, horizontal |
 direction | string | left | Describe left, center, right |
+tooltip | boolean | false | show tooltip |
+textLimit | string | none | set limit text. Value "100px", "200px" ... |
 
 ### Author
 - Tony Nguyen - nhattruong1811@gmail.com
