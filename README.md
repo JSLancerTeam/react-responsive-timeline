@@ -75,7 +75,7 @@ timelines | array | Required | data |
 pivot | string | vertical | Describe vertical, horizontal |
 direction | string | left | Describe left, center, right |
 tooltip | boolean | false | show tooltip |
-textLimit | string | none | set limit text. Value "100px", "200px" ... |
+textLimit | string | none | set limit text. Value <b>"100px"</b>, <b>"200px"</b> ... |
 
 ### Author
 - Tony Nguyen - nhattruong1811@gmail.com
