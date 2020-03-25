@@ -8,6 +8,7 @@ const Timeline = ({
   timelines, direction, pivot, textLimit, tooltip,
 }) => {
   const classTextLimit = textLimit !== 'none' ? 'react-timeline__content--limit' : ''
+  const styleTextLimit = textLimit !== 'none' ? { width: `${textLimit}` } : {}
   const cssTooltip = tooltip ? 'react-timeline__event--tooltip' : ''
 
   return (
@@ -23,7 +24,7 @@ const Timeline = ({
                 </div>
               )}
             </div>
-            <div className={`react-timeline_content ${classTextLimit}`} style={{ width: `${textLimit}` }}>
+            <div className={`react-timeline_content ${classTextLimit}`} style={styleTextLimit}>
               <div className="react-timeline__title"><span>{item.title}</span></div>
               {item.sub && <div className="react-timeline__lead">{item.sub}</div>}
             </div>

@@ -35,4 +35,3 @@ const data = [
 <Timeline timelines={data} pivot="vertical" direction="center" tooltip={true} textLimit="none"  />
 
 ```
-  
