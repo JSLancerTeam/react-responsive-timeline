@@ -14,8 +14,8 @@ const Timeline = ({
   return (
     <div className={`react-timeline react-timeline--${pivot} react-timeline--${direction}`}>
       {
-        timelines.map(item => (
-          <div key={item.id} className={`react-timeline__event ${cssTooltip}`}>
+        timelines.map((item, index) => (
+          <div key={index} className={`react-timeline__event ${cssTooltip}`}>
             <div className="react-timeline__icons">
               {tooltip && (
                 <div className="react-timeline__tooltip">

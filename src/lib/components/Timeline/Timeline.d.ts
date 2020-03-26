@@ -1,7 +1,6 @@
 import React from 'react';
 
 export interface TimelineItem {
-	id: string | number;
 	title: string;
 	sub?: string;
 }

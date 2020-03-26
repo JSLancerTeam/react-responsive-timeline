@@ -50,17 +50,14 @@ import { Timeline } from 'react-responsive-timeline';
   textLimit="none"
   timelines={[
     {
-      id: 1,
       title: 'C.A. Alexander, A Pattern Language, New York,, 1977.',
       sub: '10 May 2020',
     },
     {
-      id: 2,
       title: 'E. Yourdon, L. Constantine, Structured Design, N.J.,, 1978.',
       sub: '12 May 2020',
     },
     {
-      id: 3,
       title: 'C.A. Alexander, The Timeless Way of Building, New York,, 1979.',
       sub: '05 July 2020',
     }
@@ -75,7 +72,7 @@ timelines | array | Required | data |
 pivot | string | vertical | Describe vertical, horizontal |
 direction | string | left | Describe left, center, right |
 tooltip | boolean | false | show tooltip |
-textLimit | string | none | set limit text. Value <b>"100px"</b>, <b>"200px"</b> ... |
+textLimit | string | none | set limit text. Or a css px string. Eg: <b>"100px"</b>, <b>"200px"</b> ... |
 
 ### Author
 - Tony Nguyen - nhattruong1811@gmail.com
